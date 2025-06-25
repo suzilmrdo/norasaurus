@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norasaurus Pre-Hire Application</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #5a2e8a;
+      text-align: center;
+    }
+    p, .disclaimer {
+      text-align: center;
+      font-size: 14px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      background-color: #5a2e8a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #4b2571;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <img src="/mnt/data/A_logo_for_\"Norasaurus\"_features_a_stylized_cartoo.png" alt="Norasaurus Logo" class="logo">
+  <h2>Norasaurus Pre-Hire Application Form</h2>
+  <p>Please complete the form below to be considered for a Personal Support Worker position.</p>
+  <p class="disclaimer"><strong>Note:</strong> By submitting this application, you are applying to become an employee of <strong>Norasaurus</strong>, a registered d/b/a of domestic employer <strong>Susan Limardo</strong>, parent and legal guardian of <strong>Nora Limardo</strong>. This is not a position with the State of Illinois or ACES$ IL.</p>
+  <form action="mailto:youremail@example.com" method="post" enctype="multipart/form-data">
+    <label>Full Legal Name:<br>
+      <input type="text" name="full_name" required>
+    </label>
+
+    <label>Date of Birth:<br>
+      <input type="date" name="dob" required>
+    </label>
+
+    <label>Phone Number:<br>
+      <input type="tel" name="phone" required>
+    </label>
+
+    <label>Email Address:<br>
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Mailing Address:<br>
+      <textarea name="mailing_address" required></textarea>
+    </label>
+
+    <label>Physical Address (if different):<br>
+      <textarea name="physical_address"></textarea>
+    </label>
+
+    <label>County of Residence:<br>
+      <input type="text" name="county" required>
+    </label>
+
+    <label>Last 4 Digits of Social Security Number:<br>
+      <input type="text" name="ssn_last4" maxlength="4">
+    </label>
+
+    <label>Are you 18 years or older?<br>
+      <select name="over_18" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+
+    <label>Do you live in the same household as the Consumer?<br>
+      <select name="live_with_consumer" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+
+    <label>Relationship to Consumer (if any):<br>
+      <input type="text" name="relationship">
+    </label>
+
+    <label>Do you want to use Direct Deposit?<br>
+      <select name="direct_deposit">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+
+    <label>Do you need a translator for the I-9 form?<br>
+      <select name="i9_translator">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+    </label>
+
+    <label>Do you consent to a background check?<br>
+      <select name="background_check" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+
+    <label>Questions, Comments, or Additional Information:<br>
+      <textarea name="comments" placeholder="Let us know anything else you'd like to share..." rows="4"></textarea>
+    </label>
+
+    <label>Attach Your Resume (PDF or Word):<br>
+      <input type="file" name="resume" accept=".pdf, .doc, .docx">
+    </label>
+
+    <input type="submit" value="Submit Application">
+  </form>
+</body>
+</html>
